@@ -4,7 +4,7 @@ class Calendar {
         this.currentMonth = this.date.getMonth();
         this.currentYear = this.date.getFullYear();
         this.selectedDate = null;
-        
+        // Month added
         this.monthNames = [
             "January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
