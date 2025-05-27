@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <div class="header-left">
+                <button id="prevMonth" class="nav-btn" aria-label="Previous month"><i class="fas fa-chevron-left"></i></button>
+                <div class="date-selectors">
+                    <select id="monthSelect" class="date-select" aria-label="Select month"></select>
+                    <select id="yearSelect" class="date-select" aria-label="Select year"></select>
+                </div>
+                <button id="nextMonth" class="nav-btn" aria-label="Next month"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <button id="todayBtn" class="today-btn">Today</button>
+        </div>
+        <div class="calendar-weekdays">
+            <div>S</div>
+            <div>M</div>
+            <div>T</div>
+            <div>W</div>
+            <div>T</div>
+            <div>F</div>
+            <div>S</div>
+        </div>
+        <div id="calendar" class="calendar-grid" role="grid" aria-label="Calendar"></div>
+        <div class="selected-date-info">
+            <div id="selectedDateDisplay"></div>
+        </div>
+    </div>
+    <footer class="calendar-footer">
+        <p>Made With 🚁 by Hazrat Ali</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
